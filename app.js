@@ -37,7 +37,7 @@ function getSliderVal() {
 		let currentAge = parseInt(slider.value);
 		decolor();
 		color(currentAge * 52);
-		age.innerHTML = `${slider.value}/<h6 >${maxYears}</h6> yrs `;
+		age.innerHTML = `${slider.value}/<h6 style="display:inline">${maxYears}</h6> yrs `;
 		total.textContent = `total weeks:${slider.value * 52}\/${maxYears * 52} `;
 	}
 }
