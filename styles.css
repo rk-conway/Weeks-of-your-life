@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,400i,700");
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	font-family: Inconsolata;
+	color: black;
+}
+
+.main-container {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.container {
+	width: clamp(300px, 100%, 1200px);
+	min-height: 100vh;
+	padding: 8px 12px;
+	/* 	border: 1px dashed; */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.summary-sec {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+p {
+	text-align: center;
+}
+
+.age {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.calender {
+	height: 60vh;
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1px;
+}
+
+.ball {
+	width: clamp(1px, 1%, 8px);
+	aspect-ratio: 1;
+	/* 		border-radius: 50%; */
+	/* 	scale: 0.8; */
+	background-color: #cfd8dc;
+}
+
+.checked {
+	background: red;
+}
+
+.input-section {
+	width: 100%;
+}
+
+form {
+	width: clamp(150px, 100%, 400px);
+	margin: 0 auto;
+}
+
+input {
+	width: 100%;
+	margin-top: 1rem;
+	accent-color: red;
+	color: red;
+}

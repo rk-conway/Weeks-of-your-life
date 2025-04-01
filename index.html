@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weeks of your life</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="main-container">
+        <div class="container">
     
+            <div class="summary-sec">
+                <h1>Wks of your life</h1>
+                <p class="age">32</p>
+                <p class="total">total weeks: 5200</p>
+            </div>
+    
+            <div class="calender">
+                <div class="ball"></div>
+            </div>
+    
+            <div class="input-section">
+                <form action="">
+                    <label for="age">Age:</label>
+                    <input type="range" name="age" value="21" oninput="getSliderVal()">
+                </form>
+            </div>
+    
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
